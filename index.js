@@ -54,7 +54,7 @@ app.get("/pelanggan", (req, res) => {
 // end-point akses data pelanggan berdasarkan id_pelanggan tertentu
 app.get("/pelanggan/:id", (req, res) => {
     let data = {
-        id_pelanggan: req.params.id
+        id_pelanggan: req.params.id_pelanggan
     }
     // create sql query
     let sql = "select * from pelanggan where ?"
@@ -145,7 +145,7 @@ app.put("/pelanggan", (req, res) => {
 app.delete("/pelanggan/:id", (req, res) => {
     // prepare data
     let data = {
-        id_pelanggan: req.params.id
+        id_pelanggan: req.params.id_pelanggan
     }
 
     // create query sql delete
@@ -194,7 +194,7 @@ app.get("/admin", (req, res) => {
 // end-point akses data admin berdasarkan id_admin tertentu
 app.get("/admin/:id", (req, res) => {
     let data = {
-        id_admin: req.params.id
+        id_admin: req.params.id_admin
     }
     // create sql query
     let sql = "select * from admin where ?"
@@ -285,7 +285,7 @@ app.put("/admin", (req, res) => {
 app.delete("/admin/:id", (req, res) => {
     // prepare data
     let data = {
-        id_admin: req.params.id
+        id_admin: req.params.id_admin
     }
 
     // create query sql delete
@@ -334,7 +334,7 @@ app.get("/barang", (req, res) => {
 // end-point akses data barang berdasarkan id_barang tertentu
 app.get("/barang/:id", (req, res) => {
     let data = {
-        id_barang: req.params.id
+        id_barang: req.params.id_barang
     }
     // create sql query
     let sql = "select * from barang where ?"
@@ -427,7 +427,7 @@ app.put("/barang", (req, res) => {
 app.delete("/barang/:id", (req, res) => {
     // prepare data
     let data = {
-        id_barang: req.params.id
+        id_barang: req.params.id_barang
     }
 
     // create query sql delete
