@@ -52,7 +52,7 @@ app.get("/pelanggan", (req, res) => {
 })
 
 // end-point akses data pelanggan berdasarkan id_pelanggan tertentu
-app.get("/pelanggan/:id", (req, res) => {
+app.get("/pelanggan/:id_pelanggan", (req, res) => {
     let data = {
         id_pelanggan: req.params.id_pelanggan
     }
@@ -142,7 +142,7 @@ app.put("/pelanggan", (req, res) => {
 })
 
 // end-point menghapus data siswa berdasarkan id_pelanggan
-app.delete("/pelanggan/:id", (req, res) => {
+app.delete("/pelanggan/:id_pelanggan", (req, res) => {
     // prepare data
     let data = {
         id_pelanggan: req.params.id_pelanggan
@@ -192,7 +192,7 @@ app.get("/admin", (req, res) => {
 })
 
 // end-point akses data admin berdasarkan id_admin tertentu
-app.get("/admin/:id", (req, res) => {
+app.get("/admin/:id_admin", (req, res) => {
     let data = {
         id_admin: req.params.id_admin
     }
@@ -282,7 +282,7 @@ app.put("/admin", (req, res) => {
 })
 
 // end-point menghapus data siswa berdasarkan id_admin
-app.delete("/admin/:id", (req, res) => {
+app.delete("/admin/:id_admin", (req, res) => {
     // prepare data
     let data = {
         id_admin: req.params.id_admin
@@ -332,7 +332,7 @@ app.get("/barang", (req, res) => {
 })
 
 // end-point akses data barang berdasarkan id_barang tertentu
-app.get("/barang/:id", (req, res) => {
+app.get("/barang/:id_barang", (req, res) => {
     let data = {
         id_barang: req.params.id_barang
     }
@@ -424,7 +424,7 @@ app.put("/barang", (req, res) => {
 })
 
 // end-point menghapus data siswa berdasarkan id_barang
-app.delete("/barang/:id", (req, res) => {
+app.delete("/barang/:id_barang", (req, res) => {
     // prepare data
     let data = {
         id_barang: req.params.id_barang
